@@ -1,0 +1,4 @@
+getconf -a # global constants on the system
+getconf PAGESIZE # page size setting on the system
+cat /proc/self/status # access from within the process via magic symbols # man proc #
+cat /proc/<pid>/statm # second field is RSS in num pages == vmRSS in /proc/<pid>/status
