@@ -1,0 +1,4 @@
+#! /usr/bin/env bash
+
+eval `ssh-agent -s` || eval $(ssh-agent) || exec ssh-agent bash # start ssh-agent in bash before performing ssh-add
+ssh-add -k ~/.ssh/<private_key> # add ssh key to keychain; needs passphrase
